@@ -1,0 +1,36 @@
+loss: !!python/object:gluonts.torch.modules.loss.NegativeLogLikelihood
+  __dict__:
+    beta: 0.0
+  __fields_set__: !!set {}
+  __private_attribute_values__: {}
+lr: 0.001
+model_kwargs:
+  cardinality:
+  - 1
+  context_length: 6241
+  default_scale: 0.0
+  distr_output: !!python/object/apply:copyreg.__newobj_ex__
+    args:
+    - !!python/name:pts.modules.distribution_output.StudentTOutput ''
+    - !!python/tuple []
+    - &id001 !!python/object/apply:collections.OrderedDict
+      - - - dim
+          - null
+    state:
+      __init_args__: *id001
+      dim: null
+  dropout_rate: 0.1
+  embedding_dimension: null
+  freq: D
+  hidden_size: 40
+  input_size: 1
+  lags_seq: null
+  num_feat_dynamic_real: 4
+  num_feat_static_cat: 1
+  num_feat_static_real: 1
+  num_layers: 2
+  num_parallel_samples: 100
+  prediction_length: 1806
+  scaling: mean
+patience: 10
+weight_decay: 1.0e-08
